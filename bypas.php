@@ -1,7 +1,4 @@
 <?php
-$key = "e27344fb3cdd45f29bf5d75bab0f201f";
-//V2, V3, Hcapthca  //url,key,sitekey
-//OCR (KEY,name image file
 function hcap($key,$sitekey,$url){
 $inn = json_decode(file_get_contents("https://api.1stcaptcha.com/hcaptcha?apikey=".$key."&sitekey=".$sitekey."&siteurl=".urlencode($url)))->TaskId;
 while(true){
